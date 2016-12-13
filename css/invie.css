@@ -108,7 +108,7 @@ textarea:focus
 {
     font-size: 24px;
 
-    position: absolute;
+    position: fixed;
     right: 0;
 
     display: inline-block;
@@ -426,11 +426,9 @@ th
 {
     line-height: 40px;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-
-    display: inline-block;
 
     width: 40px;
     height: 40px;
@@ -444,6 +442,7 @@ th
     z-index: 3;
 
     margin: 10px;
+    display: none;
 }
 
 @media screen and (max-width: 767px)
@@ -535,9 +534,12 @@ th
 
 @media screen and (max-width: 500px)
 {
+    .burguer-button{
+      display: block;
+    }
     .menu
     {
-        position: absolute;
+        position: fixed;
         z-index: 2;
         top: 0;
         right: 0;
@@ -565,6 +567,15 @@ th
     {
         position: static;
     }
+
+    .portada .button {
+      display: block;
+    }
+
+    .formulario .button{
+      display: block;
+    }
+
 
     .menu li
     {

@@ -7,6 +7,7 @@
     <title>Invie - tus mejores guitarras!!</title>
     <link rel="stylesheet" href="css/invie.css" />
     <link href="https://fonts.googleapis.com/css?family=Allerta%7CMontserrat" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </head>
 
 <body>
@@ -121,6 +122,21 @@
         function toggleMenu() {
             $menu.classList.toggle('active');
         }
+
+        function showMenu() {
+            $menu.classList.add('active');
+        }
+
+        function hideMenu() {
+            $menu.classList.remove('active');
+        }
+
+        // Gestos touch
+        var $body = document.body;
+        var gestos = new Hammer($body);
+        gestos.on('swipeleft', hideMenu);
+
+        gestos.on('swiperight', showMenu);
     </script>
 </body>
 
