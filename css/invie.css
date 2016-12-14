@@ -345,6 +345,10 @@ input:focus, textarea:focus {
   margin-bottom: 80px;
 }
 
+iframe{
+    border-width: 0px;
+}
+
 @media screen and (max-width: 800px) {
   /*body {
     border: 10px solid red;
