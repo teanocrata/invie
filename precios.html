@@ -3,7 +3,6 @@
   <head>
     <title>Precios de tus mejores guitarras!!</title>
     <meta charset="utf-8"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CAllerta" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   </head>
   <body class="precios">
@@ -114,6 +113,22 @@
         </form>
       </div>
     </footer>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {families: ['Montserrat:400,700:latin', 'Allerta::latin']}
+      };
+
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+
+      })();
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
     <script>
       var consulta = window.matchMedia('(max-width: 500px)');
