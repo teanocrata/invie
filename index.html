@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Invie - tus mejores guitarras!!</title>
-    <link rel="stylesheet" href="css/invie.css" />
-    <link href="https://fonts.googleapis.com/css?family=Allerta%7CMontserrat" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Allerta|Montserrat');
+    </style>
+    <style>
+      @font-face{font-family:'icomoon';font-weight:400;font-style:normal;src:url(./fonts/icomoon.eot?el88zp);src:url(./fonts/icomoon.eot?el88zp#iefix) format("embedded-opentype"),url(./fonts/icomoon.ttf?el88zp) format("truetype"),url(./fonts/icomoon.woff?el88zp) format("woff"),url(./fonts/icomoon.svg?el88zp#icomoon) format("svg")}[class*=' icon-']{font-family:'icomoon'!important;font-weight:400;font-style:normal;font-variant:normal;line-height:1;text-transform:none;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:'\e9bd'}body{font-family:'Allerta',sans-serif;margin:0}header{position:relative;margin:auto}.background{background-image:url(./images/background.png);background-size:cover}.button{font-size:18px;padding:7px 12px;text-decoration:none;color:#fff;border:none;border-radius:12px;background:#fd324e;background:linear-gradient(to left,#fe344e,#ff7250)}.logotipo{display:inline-block;margin-left:0}.menu{font-size:24px;position:fixed;right:0;display:inline-block}.menu li{display:inline;margin-left:30px}.menu li::before{content:'∘';color:#fff;background-color:inherit}.titulo{font-family:'Montserrat',sans-serif;font-size:70px;margin-bottom:0}.titulo span{text-decoration:underline}.title-a{font-size:24px;margin-top:0}.contenedor{width:auto;max-width:800px;margin:auto}.guitarras{margin-bottom:100px;color:#1f313c;background-color:inherit}.guitarras h2{font-family:'Montserrat',sans-serif;font-size:35px}.title-b{font-size:50px;margin-bottom:20px}.portada{height:500px;padding:20px;color:#fff;background-color:inherit}.guitarra{position:relative;margin:10px 10px 40px;padding:10px;border:1px solid #1f313c;border-radius:8px}.guitarra ol{padding-left:0}.contenedor-guitarra-a{padding-left:20px}.derecha{position:absolute;right:0;bottom:0}.menu a{text-decoration:none;color:#fff;background-color:inherit}@media screen and (max-width: 800px){.titulo{font-size:45px;margin-top:30px}.title-a{font-size:18px}.portada{height:auto}.portada .button{display:inline-block;margin-bottom:30px}.guitarras{margin-bottom:0;text-align:center}.derecha{position:static;float:none}.title-b{margin:0}.guitarra li{list-style:none}}.burguer-button{line-height:40px;position:fixed;top:0;left:0;width:40px;height:40px;text-align:center;border-radius:50%;background:#395667;z-index:3;margin:10px;display:none}@media screen and (max-width: 650px){.header{text-align:center}.logotipo{margin:0}.menu{position:static;display:block}.menu li:first-child{margin:0}.menu ul{padding:0}.contenedor-guitarra-a{padding:0}}@media screen and (max-width: 500px){.burguer-button{display:block}.menu{position:fixed;z-index:2;top:0;right:0;bottom:0;left:-100%;width:100%;display:flex;background:rgba(255,60,88,.8);align-items:center}.menu ul{flex:1}.portada .contenedor{position:static}.portada .button{display:block}.menu li{display:block;margin:0;padding:8px 0;border-bottom:1px solid #fff}.menu li:before{display:none}.menu li:first-child{border-top:1px solid #fff}.portada{text-align:center}.titulo{font-size:30px}.title-a{font-size:16px}.guitarra img{width:200px}.title-b{font-size:30px}}
+    </style>
 </head>
 
 <body>
@@ -101,6 +104,7 @@
             </form>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script>
         var consulta = window.matchMedia('(max-width:500px)');
         consulta.addListener(mediaQuery);
@@ -138,6 +142,7 @@
 
         gestos.on('swiperight', showMenu);
     </script>
+    <link rel="stylesheet" href="css/invie.css" />
 </body>
 
 </html>
